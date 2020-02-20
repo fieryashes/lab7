@@ -10,6 +10,7 @@ exports.view = function(request, response) {
 	var projectID = request.params.id;
 	var project = getProjectData(projectID);
 	response.render('project', project);
+	projects["viewAlt"] = false;
 }
 
 function getProjectData(projectID) {
